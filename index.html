@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <header class="center" id="logo">
+      <img src="./favicon.ico" alt="logo" />
+      <h1>Creator</h1>
+    </header>
+
+    <div class="center">
+      <div id="page">
+        <h2>Credit Card Checkout</h2>
+        <form id="form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required="required" />
+          </div>
+          <div class="field">
+            <label for="ccn">Credit Card Number:</label>
+            <input
+              id="ccn"
+              type="tel"
+              name="ccn"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number"
+              maxlength="19"
+              placeholder="xxxx xxxx xxxx xxxx"
+              required />
+          </div>
+
+          <div class="field">
+            <label for="expiration date">Expiration Date</label>
+            <input type="date" name="expiration date" id="expiration date" required="required" />
+          </div>
+
+          <div class="field">
+            <label for="security code">Security Code</label>
+            <input type="number" name="security code" id="security code" required="required" />
+          </div>
+
+          <div class="field center">
+            <input type="submit" value="Checkout" id="checkout" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
